@@ -1,0 +1,41 @@
+Main	
+	string[] opciones = piedra, papel, tijera // opciones[0]
+	int rondas, intentos, contadorPC, contadorjugador
+	string jugada, nombreJugadorA, nombreJugadorB, jugadaPC
+
+	Repetir rondas hasta que llegue a 3
+	 	Mostrar  "elige Piedra, Papel o Tijera"
+	 	leer jugada
+	 	jugadaPC = opciones[random(0,2)]
+
+	 	Si jugada == jugadaPC
+	 	entonces 
+	 		mostrar "empate"
+	 	finSi
+
+	 	SI jugada = Piedra mientras jugadaPC = Papel
+	 	entonces escribir "PC gana"
+	 	finSI
+
+	 	Si jugada = Tijera mientras jugadaPC =Piedra
+	 	entonces escribir "PC gana"
+	 	finSi
+
+	 	Si jugada = Papel mientras jugadaPC =Tijera
+	 	entonces escribir "PC gana"
+	 	finSi
+
+	 	Si jugadaPC = Piedra mientras jugada = Papel
+	 	entonces escribir "Jugador gana"
+	 	finSI
+
+	 	SI jugadaPC = Papel mientras jugada = Tijera
+	 	entonces escribir "Jugador gana"
+	 	finSi
+
+	 	Si jugadaPC = Tijera mientras jugada = Papel
+	 	entonces escribir "jugador gana"
+	
+	finRepetir
+
+FinMain
